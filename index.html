@@ -42,6 +42,27 @@
             background: rgba(255, 255, 255, 0.85);
         }
 
+        .strip {
+            position: fixed;
+            left: 0;
+            right: 0;
+            height: 18vh;
+            background: #ffffff;
+            z-index: -1;
+            border-left: 4px solid #000;
+            border-right: 4px solid #000;
+        }
+
+        .strip.top {
+            top: 0;
+            border-bottom: 4px solid #000;
+        }
+
+        .strip.bottom {
+            bottom: 0;
+            border-top: 4px solid #000;
+        }
+
         h1 {
             font-size: 2.5rem;
             font-weight: 900;
@@ -122,6 +143,9 @@
         <source src="video/background.mp4" type="video/mp4">
     </video>
     <div class="bg-overlay"></div>
+
+    <div class="strip top"></div>
+    <div class="strip bottom"></div>
 
     <h1>Мои проекты</h1>
 
