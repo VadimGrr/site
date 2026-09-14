@@ -22,10 +22,31 @@
             padding: 40px 20px;
         }
 
+        .bg-video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: -2;
+            object-fit: cover;
+        }
+
+        .bg-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background: rgba(255, 255, 255, 0.85);
+        }
+
         h1 {
             font-size: 2.5rem;
             font-weight: 900;
             border: 4px solid #000;
+            background: #ffffff;
             padding: 20px 40px;
             margin-bottom: 60px;
             text-transform: uppercase;
@@ -46,6 +67,7 @@
             width: 380px;
             text-decoration: none;
             color: #000;
+            background: rgba(255, 255, 255, 0.9);
             transition: background 0.2s, transform 0.15s;
             display: flex;
             flex-direction: column;
@@ -91,10 +113,16 @@
             width: 100%;
             max-width: 900px;
             text-align: center;
+            background: rgba(255, 255, 255, 0.9);
         }
     </style>
 </head>
 <body>
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="video/background.mp4" type="video/mp4">
+    </video>
+    <div class="bg-overlay"></div>
+
     <h1>Мои проекты</h1>
 
     <div class="cards">
