@@ -127,6 +127,32 @@
             color: #fff;
         }
 
+        .coming-soon {
+            border: 4px solid #000;
+            width: 380px;
+            padding: 30px 35px;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            opacity: 0.4;
+            pointer-events: none;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .coming-soon-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .coming-soon-desc {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+
         footer {
             margin-top: auto;
             padding-top: 60px;
@@ -170,12 +196,11 @@
             <span class="card-desc">Telegram-бот для D&amp;D: персонажи, заклинания, броски кубов в чате.</span>
             <span class="card-arrow">→ Открыть в TG</span>
         </a>
+    </div>
 
-        <div class="card" style="opacity: 0.4; pointer-events: none;">
-            <span class="card-title">Скоро</span>
-            <span class="card-desc">Новый проект будет добавлен сюда.</span>
-            <span class="card-arrow">→ Скоро</span>
-        </div>
+    <div class="coming-soon">
+        <span class="coming-soon-title">Скоро</span>
+        <span class="coming-soon-desc">Новый проект будет добавлен сюда.</span>
     </div>
 
     <footer>2026</footer>
